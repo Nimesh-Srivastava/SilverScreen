@@ -91,16 +91,16 @@ function HomeStackNavigator() {
   return (
     <HomeStack.Navigator>
       <HomeStack.Screen
+        name="HomeScreen"
+        component={HomeScreen}
+        options={{ headerShown: false }}
+      />
+      <HomeStack.Screen
         name="DetailsScreen"
         component={DetailsScreen}
         options={{ 
           title: '',
          }}
-      />
-      <HomeStack.Screen
-        name="HomeScreen"
-        component={HomeScreen}
-        options={{ headerShown: false }}
       />
     </HomeStack.Navigator>
   );
