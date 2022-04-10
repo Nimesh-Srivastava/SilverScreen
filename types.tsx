@@ -1,7 +1,7 @@
-/**
- * Learn more about using TypeScript with React Navigation:
- * https://reactnavigation.org/docs/typescript/
- */
+// /**
+//  * Learn more about using TypeScript with React Navigation:
+//  * https://reactnavigation.org/docs/typescript/
+//  */
 
 import { BottomTabScreenProps } from '@react-navigation/bottom-tabs';
 import { CompositeScreenProps, NavigatorScreenParams } from '@react-navigation/native';
@@ -12,6 +12,11 @@ declare global {
     interface RootParamList extends RootStackParamList {}
   }
 }
+
+export type HomeParamList = {
+  HomeScreen: undefined;
+  DetailsScreen: undefined;
+};
 
 export type RootStackParamList = {
   Root: NavigatorScreenParams<RootTabParamList> | undefined;
@@ -35,3 +40,33 @@ export type RootTabScreenProps<Screen extends keyof RootTabParamList> = Composit
   BottomTabScreenProps<RootTabParamList, Screen>,
   NativeStackScreenProps<RootStackParamList>
 >;
+
+// export type RootStackParamList = {
+//   Root: undefined;
+//   NotFound: undefined;
+// };
+
+// export type BottomTabParamList = {
+//   Home: undefined;
+//   Coming_Soon: undefined;
+//   Search: undefined;
+//   Downloads: undefined;
+// };
+
+// export type HomeParamList = {
+//   HomeScreen: undefined;
+//   DetailsScreen: undefined;
+// };
+
+// export type TabTwoParamList = {
+//   TabTwoScreen: undefined;
+// };
+
+// export type Episode = {
+//   id: string,
+//   title: string,
+//   poster: string,
+//   duration: string,
+//   plot: string,
+//   video: string,
+// }
