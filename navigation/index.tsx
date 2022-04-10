@@ -1,9 +1,4 @@
-/**
- * If you are not familiar with React Navigation, refer to the "Fundamentals" guide:
- * https://reactnavigation.org/docs/getting-started
- *
- */
-import { FontAwesome } from '@expo/vector-icons';
+import { FontAwesome, AntDesign, MaterialIcons, Ionicons } from '@expo/vector-icons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer, DefaultTheme, DarkTheme } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -29,10 +24,6 @@ export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeNa
   );
 }
 
-/**
- * A root stack navigator is often used for displaying modals on top of all other content.
- * https://reactnavigation.org/docs/modal
- */
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 function RootNavigator() {
@@ -47,10 +38,6 @@ function RootNavigator() {
   );
 }
 
-/**
- * A bottom tab navigator displays tab buttons on the bottom of the display to switch screens.
- * https://reactnavigation.org/docs/bottom-tab-navigator
- */
 const BottomTab = createBottomTabNavigator<RootTabParamList>();
 
 function BottomTabNavigator() {
@@ -58,16 +45,16 @@ function BottomTabNavigator() {
 
   return (
     <BottomTab.Navigator
-      initialRouteName="TabOne"
+      initialRouteName="Home"
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme].tint,
       }}>
-      <BottomTab.Screen
-        name="TabOne"
+      {/* <BottomTab.Screen
+        name="Home"
         component={TabOneScreen}
         options={({ navigation }: RootTabScreenProps<'TabOne'>) => ({
-          title: 'Tab One',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          title: 'Home',
+          tabBarIcon: ({ color }) => <AntDesign name="home" size={24} color={color} />,
           headerRight: () => (
             <Pressable
               onPress={() => navigation.navigate('Modal')}
@@ -83,13 +70,37 @@ function BottomTabNavigator() {
             </Pressable>
           ),
         })}
+      /> */}
+      <BottomTab.Screen
+        name="Home"
+        component={TabOneScreen}
+        options={{
+          title: 'Home',
+          tabBarIcon: ({ color }) => <MaterialIcons name="video-library" size={24} color={color} />,
+        }}
       />
       <BottomTab.Screen
-        name="TabTwo"
+        name="Coming_soon"
         component={TabTwoScreen}
         options={{
-          title: 'Tab Two',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          title: 'Coming Soon',
+          tabBarIcon: ({ color }) => <MaterialIcons name="video-library" size={24} color={color} />,
+        }}
+      />
+      <BottomTab.Screen
+        name="Search"
+        component={TabTwoScreen}
+        options={{
+          title: 'Search',
+          tabBarIcon: ({ color }) => <Ionicons name="search" size={24} color={color} />,
+        }}
+      />
+      <BottomTab.Screen
+        name="Downloads"
+        component={TabTwoScreen}
+        options={{
+          title: 'Dowloads',
+          tabBarIcon: ({ color }) => <AntDesign name="download" size={24} color={color} />,
         }}
       />
     </BottomTab.Navigator>
