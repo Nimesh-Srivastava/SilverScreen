@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
     },
     match: {
-        color: 'lightgreen',
+        color: 'orange',
         fontWeight: 'bold',
         marginRight: 7,
         fontSize: 15,

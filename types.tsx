@@ -41,6 +41,15 @@ export type RootTabScreenProps<Screen extends keyof RootTabParamList> = Composit
   NativeStackScreenProps<RootStackParamList>
 >;
 
+export type Episode = {
+  id: string,
+  title: string,
+  poster: string,
+  duration: string,
+  plot: string,
+  video: string,
+}
+
 // export type RootStackParamList = {
 //   Root: undefined;
 //   NotFound: undefined;
