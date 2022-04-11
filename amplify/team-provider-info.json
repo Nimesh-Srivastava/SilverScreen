@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-silverscreen-dev-133853-authRole",
+      "UnauthRoleArn": "arn:aws:iam::427135246851:role/amplify-silverscreen-dev-133853-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::427135246851:role/amplify-silverscreen-dev-133853-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-silverscreen-dev-133853-deployment",
+      "UnauthRoleName": "amplify-silverscreen-dev-133853-unauthRole",
+      "StackName": "amplify-silverscreen-dev-133853",
+      "StackId": "arn:aws:cloudformation:ap-south-1:427135246851:stack/amplify-silverscreen-dev-133853/a36f8a60-b96e-11ec-891c-02a4ec5f5a4e",
+      "AmplifyAppId": "d2jm14apxpo7cp"
+    },
+    "categories": {
+      "auth": {
+        "silverscreen8156c9e4": {}
+      }
+    }
+  }
+}
