@@ -23,18 +23,11 @@ export const createCategory = /* GraphQL */ `
           categoryID
           createdAt
           updatedAt
-          _version
-          _deleted
-          _lastChangedAt
         }
         nextToken
-        startedAt
       }
       createdAt
       updatedAt
-      _version
-      _deleted
-      _lastChangedAt
     }
   }
 `;
@@ -59,18 +52,11 @@ export const updateCategory = /* GraphQL */ `
           categoryID
           createdAt
           updatedAt
-          _version
-          _deleted
-          _lastChangedAt
         }
         nextToken
-        startedAt
       }
       createdAt
       updatedAt
-      _version
-      _deleted
-      _lastChangedAt
     }
   }
 `;
@@ -95,18 +81,11 @@ export const deleteCategory = /* GraphQL */ `
           categoryID
           createdAt
           updatedAt
-          _version
-          _deleted
-          _lastChangedAt
         }
         nextToken
-        startedAt
       }
       createdAt
       updatedAt
-      _version
-      _deleted
-      _lastChangedAt
     }
   }
 `;
@@ -132,18 +111,11 @@ export const createMovie = /* GraphQL */ `
           movieID
           createdAt
           updatedAt
-          _version
-          _deleted
-          _lastChangedAt
         }
         nextToken
-        startedAt
       }
       createdAt
       updatedAt
-      _version
-      _deleted
-      _lastChangedAt
     }
   }
 `;
@@ -169,18 +141,11 @@ export const updateMovie = /* GraphQL */ `
           movieID
           createdAt
           updatedAt
-          _version
-          _deleted
-          _lastChangedAt
         }
         nextToken
-        startedAt
       }
       createdAt
       updatedAt
-      _version
-      _deleted
-      _lastChangedAt
     }
   }
 `;
@@ -206,18 +171,11 @@ export const deleteMovie = /* GraphQL */ `
           movieID
           createdAt
           updatedAt
-          _version
-          _deleted
-          _lastChangedAt
         }
         nextToken
-        startedAt
       }
       createdAt
       updatedAt
-      _version
-      _deleted
-      _lastChangedAt
     }
   }
 `;
@@ -242,13 +200,9 @@ export const createSeason = /* GraphQL */ `
         categoryID
         seasons {
           nextToken
-          startedAt
         }
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
       }
       episodes {
         items {
@@ -261,18 +215,11 @@ export const createSeason = /* GraphQL */ `
           seasonID
           createdAt
           updatedAt
-          _version
-          _deleted
-          _lastChangedAt
         }
         nextToken
-        startedAt
       }
       createdAt
       updatedAt
-      _version
-      _deleted
-      _lastChangedAt
     }
   }
 `;
@@ -297,13 +244,9 @@ export const updateSeason = /* GraphQL */ `
         categoryID
         seasons {
           nextToken
-          startedAt
         }
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
       }
       episodes {
         items {
@@ -316,18 +259,11 @@ export const updateSeason = /* GraphQL */ `
           seasonID
           createdAt
           updatedAt
-          _version
-          _deleted
-          _lastChangedAt
         }
         nextToken
-        startedAt
       }
       createdAt
       updatedAt
-      _version
-      _deleted
-      _lastChangedAt
     }
   }
 `;
@@ -352,13 +288,9 @@ export const deleteSeason = /* GraphQL */ `
         categoryID
         seasons {
           nextToken
-          startedAt
         }
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
       }
       episodes {
         items {
@@ -371,18 +303,11 @@ export const deleteSeason = /* GraphQL */ `
           seasonID
           createdAt
           updatedAt
-          _version
-          _deleted
-          _lastChangedAt
         }
         nextToken
-        startedAt
       }
       createdAt
       updatedAt
-      _version
-      _deleted
-      _lastChangedAt
     }
   }
 `;
@@ -415,25 +340,15 @@ export const createEpisode = /* GraphQL */ `
           categoryID
           createdAt
           updatedAt
-          _version
-          _deleted
-          _lastChangedAt
         }
         episodes {
           nextToken
-          startedAt
         }
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
       }
       createdAt
       updatedAt
-      _version
-      _deleted
-      _lastChangedAt
     }
   }
 `;
@@ -466,25 +381,15 @@ export const updateEpisode = /* GraphQL */ `
           categoryID
           createdAt
           updatedAt
-          _version
-          _deleted
-          _lastChangedAt
         }
         episodes {
           nextToken
-          startedAt
         }
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
       }
       createdAt
       updatedAt
-      _version
-      _deleted
-      _lastChangedAt
     }
   }
 `;
@@ -517,25 +422,15 @@ export const deleteEpisode = /* GraphQL */ `
           categoryID
           createdAt
           updatedAt
-          _version
-          _deleted
-          _lastChangedAt
         }
         episodes {
           nextToken
-          startedAt
         }
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
       }
       createdAt
       updatedAt
-      _version
-      _deleted
-      _lastChangedAt
     }
   }
 `;

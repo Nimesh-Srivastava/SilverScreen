@@ -6,20 +6,16 @@ const styles = StyleSheet.create({
         padding: 10,
     },
     title: {
-        fontSize: 16,
+        fontSize: 17,
         fontWeight: 'bold',
-        marginBottom: 3,
-        marginTop: 10,
+        marginBottom: 4,
+        marginTop: 15,
+        marginLeft: 3,
+        borderLeftWidth: 2,
+        borderColor: 'grey',
+        paddingLeft: 7,
+        paddingBottom: 2,
     },
-    image: {
-        width: 100,
-        height: 150,
-        resizeMode: 'cover',
-        borderRadius: 12,
-        marginRight: 7,
-        // borderWidth: 1,
-        // borderColor: 'white',
-    }
 });
 
 export default styles;
