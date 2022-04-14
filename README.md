@@ -26,5 +26,5 @@ Currently working on a way to solve this major issue.
 Since AWS Amplify is causing unneccessary problems due to internal issues when backend schema was hand-typed, I will build the entire backend again from scratch. This time, I'll use the UX instead of CLI of AWS amplify.
 
 ## Update 2
-Reverting to older stage caused even more problems. Apparently, expo changes versions and node modules undergo a variety of modifications when switching between git versions. All this has completely removed me from the track.
+Reverting to older git version caused even more problems. Apparently, expo changes versions and node modules also undergo a variety of modifications when switching between git versions. All this has completely removed me from the track.
 I'll probably delete the entire app, and start again.
