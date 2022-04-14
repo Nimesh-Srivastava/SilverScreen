@@ -34,5 +34,8 @@ I'll probably delete the entire app, and start again.
 <br>
 
 ## Update 3
-Tried again with older version of npm (v6.14.16 instead of v8.6.0) and also an older version of node (v16.14.2 instead of v17.9.0).
-I did see some success. It could mean that latest versions of node and npm might be the problem, as in another chatting app i recentely created
+Tried again with older version of npm (v6.14.16 instead of v8.6.0) and also an older version of node (v16.14.2 instead of v17.9.0).<br>
+I did see some success. It could mean that latest versions of node and npm might be the problem, as in another chatting app i recently created (repository not public yet) using stream.io, AWS Amplify, and AWS GraphQL, there was a significant performance boost while using these older versions.
+<br>
+<br>
+In any case, I think I have to build this entire app back from scratch.
