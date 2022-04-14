@@ -25,6 +25,14 @@ Currently working on a way to solve this major issue.
 ## Update 1
 Since AWS Amplify is causing unneccessary problems due to internal issues when backend schema was hand-typed, I will build the entire backend again from scratch. This time, I'll use the UX instead of CLI of AWS amplify.
 
+<br>
+
 ## Update 2
 Reverting to older git version caused even more problems. Apparently, expo changes versions and node modules also undergo a variety of modifications when switching between git versions. All this has completely removed me from the track.
 I'll probably delete the entire app, and start again.
+
+<br>
+
+## Update 3
+Tried again with older version of npm (v6.14.16 instead of v8.6.0) and also an older version of node (v16.14.2 instead of v17.9.0).
+I did see some success. It could mean that latest versions of node and npm might be the problem, as in another chatting app i recentely created
