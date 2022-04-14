@@ -23,7 +23,7 @@ Currently working on a way to solve this major issue.
 <br>
 
 ## Update 1
-Since AWS Amplify is causing unneccessary problems due to internal issues when backend schema was hand-typed, I will build the entire backend again from scratch. This time, I'll use the UX instead of CLI.
+Since AWS Amplify is causing unneccessary problems due to internal issues when backend schema was hand-typed, I will build the entire backend again from scratch. This time, I'll use the UX instead of CLI of AWS amplify.
 
 ## Update 2
 Reverting to older stage caused even more problems. Apparently, expo changes versions and node modules undergo a variety of modifications when switching between git versions. All this has completely removed me from the track.
